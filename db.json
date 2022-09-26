@@ -202,6 +202,20 @@
       "category": "enter",
       "amount": "456",
       "id": 35
+    },
+    {
+      "date": "2022-09-07",
+      "description": "linah",
+      "category": "Muhonja",
+      "amount": "6",
+      "id": 36
+    },
+    {
+      "date": "2022-09-23",
+      "description": "Chris",
+      "category": "Ngoma",
+      "amount": "3",
+      "id": 37
     }
   ]
 }

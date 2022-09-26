@@ -15,20 +15,19 @@ import React, {useState} from "react";
         amount: amount
       }
 
-     fetch("http://localhost:8001/transactions", {
+     post(transItem)
+    }
+
+    function post (data){
+      fetch("http://localhost:8001/transactions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json"
         },
-        body: JSON.stringify(transItem)
+        body: JSON.stringify(data)
       })
-      .then(resp => resp.json())
-      .then(data => transactionForm(data))
+      transactionForm(data)
     }
-    
-
-  
     
 
   return (
