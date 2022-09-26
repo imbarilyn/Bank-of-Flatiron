@@ -1,60 +1,44 @@
-import React, { useState } from "react";
-import Transaction from "./Transaction";
+import React, {useState} from "react";
 
-function AddTransactionForm() {
-  const [dataForm, setDataForm] = useState([
-    {
-      date: "",
-      description: "",
-      category: "",
-      amount: 0
-    }
-  ]
-  )
+  function AddTransactionForm ({transactionForm}){
+    const [date, setDate] = useState("");
+    const [description, setDescription] = useState("");
+    const [category, setCategory] = useState("");
+    const [amount, setAmount] = useState("")
 
-  function handleChange(){}
+    function handlerSubmit(e) {
 
-  function handleSubmit (e) {
-    e.preventDefault();
-    const data ={
-      date: e.target.date.value,
-      description: e.target.description.value,
-      category: e.target.category.value,
-      amount:  e.target.amount.value
-    }
-    post(data); 
-    renderItem()   
-    }
+      const transItem = {
+        date: date,
+        description: description,
+        category: category,
+        amount: amount
+      }
 
-    function post (data){
-      fetch("http://localhost:8001/transactions", {
+     fetch("http://localhost:8001/transactions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json"
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(transItem)
       })
-      setDataForm(data)
-    }
-
-    function renderItem () {
-      fetch("http://localhost:8001/transactions")
       .then(resp => resp.json())
-      .then(itemAdd => itemAdd.map(item => item))
-
+      .then(data => transactionForm(data))
     }
-
+    
 
   
+    
 
   return (
     <div className="ui segment">
-      <form className="ui form" onSubmit={handleSubmit} >
+      <form className="ui form" onSubmit = {handlerSubmit}>
         <div className="inline fields">
-          <input type="date" name="date" onChange={handleChange} />
-          <input type="text" name="description" placeholder="Description"   onChange={handleChange}/>
-          <input type="text" name="category" placeholder="Category"  onChange={handleChange}/>
-          <input type="number" name="amount" placeholder="Amount" step="0.01"  onChange={handleChange}/>
+          <input type="date" name="date" value = {date} onChange ={(e) =>setDate(e.target.value)}/>
+          <input type="text" name="description" placeholder="Description" value = {description} onChange={(e)=>setDescription(e.target.value)} />
+          <input type="text" name="category" placeholder="Category" value = {category} onChange={(e) => setCategory(e.target.value)}/> 
+          <input type="number" name="amount" placeholder="Amount" step="0.01" value = {amount} onChange={(e) => setAmount(e.target.value)}/>
         </div>
         <button type = "submit" className="ui button">
           Add Transaction
