@@ -83,6 +83,143 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2022-09-28",
+      "description": "movies",
+      "category": "",
+      "amount": "35",
+      "id": 13
+    },
+    {
+      "date": "2022-09-28",
+      "description": "movies",
+      "category": "",
+      "amount": "35",
+      "id": 14
+    },
+    {
+      "date": "2022-09-28",
+      "description": "movies",
+      "category": "",
+      "amount": "35",
+      "id": 15
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": 0,
+      "id": 16
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": 0,
+      "id": 17
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": 0,
+      "id": 18
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": 0,
+      "id": 19
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": 0,
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "date": "2022-09-14",
+      "description": "movies",
+      "category": "Food",
+      "amount": "4",
+      "id": 27
+    },
+    {
+      "date": "2022-09-06",
+      "description": "Pizza",
+      "category": "Food",
+      "amount": "5",
+      "id": 28
+    },
+    {
+      "date": "2022-09-09",
+      "description": "Juice",
+      "category": "Food",
+      "amount": "3",
+      "id": 29
+    },
+    {
+      "date": "2022-09-14",
+      "description": "movies",
+      "category": "Food",
+      "amount": "5",
+      "id": 30
+    },
+    {
+      "date": "2022-09-02",
+      "description": "movies",
+      "category": "entertainment",
+      "amount": "5",
+      "id": 31
+    },
+    {
+      "date": "2022-09-02",
+      "description": "movies",
+      "category": "entertainment",
+      "amount": "5",
+      "id": 32
+    },
+    {
+      "date": "2022-09-07",
+      "description": "Fuel",
+      "category": "fuel",
+      "amount": "100",
+      "id": 33
+    },
+    {
+      "date": "2022-09-08",
+      "description": "movies",
+      "category": "Food",
+      "amount": "7",
+      "id": 34
+    },
+    {
+      "date": "2022-09-14",
+      "description": "Travels",
+      "category": "enter",
+      "amount": "456",
+      "id": 35
     }
   ]
 }
