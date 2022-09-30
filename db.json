@@ -216,6 +216,48 @@
       "category": "Ngoma",
       "amount": "3",
       "id": 37
+    },
+    {
+      "date": "2022-09-09",
+      "description": "movies",
+      "category": "enter",
+      "amount": "4",
+      "id": 38
+    },
+    {
+      "date": "2022-09-03",
+      "description": "linah",
+      "category": "Food",
+      "amount": "5",
+      "id": 39
+    },
+    {
+      "date": "2022-09-09",
+      "description": "Geoffrey",
+      "category": "Partying",
+      "amount": "500",
+      "id": 40
+    },
+    {
+      "date": "2022-09-15",
+      "description": "Murife",
+      "category": "food",
+      "amount": "79",
+      "id": 41
+    },
+    {
+      "date": "2022-09-16",
+      "description": "Okola",
+      "category": "Okola",
+      "amount": "6",
+      "id": 42
+    },
+    {
+      "date": "2022-09-08",
+      "description": "Sam G",
+      "category": "Sam G",
+      "amount": "787",
+      "id": 43
     }
   ]
 }

@@ -1,13 +1,15 @@
 import React, {useState} from "react";
 
   function AddTransactionForm ({transactionForm}){
+    
     const [date, setDate] = useState("");
     const [description, setDescription] = useState("");
     const [category, setCategory] = useState("");
     const [amount, setAmount] = useState("")
 
     function handlerSubmit(e) {
-
+      e.preventDefault();
+//structuring our object for post HTTP verb
       const transItem = {
         date: date,
         description: description,
@@ -17,6 +19,7 @@ import React, {useState} from "react";
 
      post(transItem)
     }
+    //const data = transItem
 
     function post (data){
       fetch("http://localhost:8001/transactions", {
@@ -47,4 +50,4 @@ import React, {useState} from "react";
   );
 }
 
-export default AddTransactionForm;
+export default AddTransactionForm;                          

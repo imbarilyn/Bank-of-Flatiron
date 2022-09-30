@@ -2,7 +2,7 @@ import React from "react";
 
 function Transaction({item}) {
   const {date, description, category, amount} = item;
- //console.log(transaction.date)
+ console.log(item                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             )
   return (
     
     <tr>

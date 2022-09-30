@@ -24,6 +24,7 @@ function AccountContainer() {
     setTransaction(updatedTrasaction);
     //console.log(updatedTrasaction)
   }
+                                                                                        
 
   return (
     <div>
